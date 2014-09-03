@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="ng-ci">
+<head>
+	<title>Angular/CodeIgniter</title>
+
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<style>
+		.bold {
+			font-weight: bold;
+		}
+	</style>
+
+	<!--Angular-->
+	<script src="app/angular/angular.js"></script>
+
+	<!--App-->
+	<script src="app/app.js"></script>
+
+	<!--Controller-->
+	<script src="app/controllers/ciCtrl.js"></script>
+
+	<!--Service-->
+	<script src="app/services/ciSrvc.js"></script>
+
+</head>
+<body>
+<main class="container" ng-controller="ciCtrl">
+	<header class="jumbotron">
+		<h1 class="text-center">Angular/CodeIgniter Demo</h1>
+		<p class="text-center">A simple demonstration of using AngularJS to make AJAX calls to a CodeIgniter backend.</p>
+	</header>
+	<section class="row">
+		<div class="col-sm-12 text-center">
+			<p class="lead">Push the button below to spring Angular into action!</p>
+			<p>The database will return one word, at random, from the following phrase:</p>
+			<p class="text-muted">"The cake is a lie!"</p>
+			<hr>
+			<div class="well" ng-class="{'text-muted': (default == true), 'text-primary bold': (default == false)}">{{word}}</div>
+			<button class="btn btn-success" ng-click="getWord()">Get a word!</button>
+		</div>
+	</section>
+</main>
+
+</body>
+</html>

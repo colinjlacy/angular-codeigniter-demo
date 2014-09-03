@@ -6,9 +6,13 @@
 	<!--Stylesheets-->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<style>
 		.bold {
 			font-weight: bold;
+		}
+		a {
+			font-size: 30px;
 		}
 	</style>
 
@@ -39,9 +43,12 @@
 			<hr>
 			<div class="well" ng-class="{'text-muted': (default == true), 'text-primary bold': (default == false)}">{{word}}</div>
 			<button class="btn btn-success" ng-click="getWord()">Get a word!</button>
+			<hr>
 		</div>
 	</section>
 </main>
-
+<footer class="text-center">
+	<a href="https://github.com/colinjlacy/angular-codeigniter-demo"><span class="fa fa-github"></span></a>
+</footer>
 </body>
 </html>

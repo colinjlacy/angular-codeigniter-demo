@@ -5,7 +5,7 @@ angular.module("ng-ci")
 	.controller("ciCtrl", function($scope, ciSrvc) {
 
 		// set a default
-		$scope.word = "Nothing yet, you monster.";
+		$scope.word = "Cake, and grief counseling, will be available at the conclusion of the test. ";
 		$scope.default = true;
 
 		// define the function that gets the random word from the database

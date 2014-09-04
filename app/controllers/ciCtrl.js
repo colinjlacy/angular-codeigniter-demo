@@ -10,6 +10,8 @@ angular.module("ng-ci")
 
 		// define the function that gets the random word from the database
 		$scope.getWord = function() {
+			$scope.default = true;
+			$scope.word = "...";
 			ciSrvc.getWord().then(function(data) {
 				$scope.word = data;
 				$scope.default = false;

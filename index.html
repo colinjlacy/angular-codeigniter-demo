@@ -38,8 +38,9 @@
 	<section class="row">
 		<div class="col-sm-12 text-center">
 			<p class="lead">Push the button below to spring Angular into action!</p>
-			<p>The database will return one word, at random, from the following phrase:</p>
+			<p>Each word from the following phrase has been entered as a row in the database:</p>
 			<p class="text-muted">"The cake is a lie!"</p>
+			<p>Each time you push the button, Angular will make a request to CodeIgniter, which will pull one row at random, and send it to Angular.</p>
 			<hr>
 			<div class="well" ng-class="{'text-muted': (default == true), 'text-primary bold': (default == false)}">{{word}}</div>
 			<button class="btn btn-success" ng-click="getWord()">Get a word!</button>
